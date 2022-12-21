@@ -11,7 +11,7 @@ export function Home() {
           src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           width="200"
           height="130"
-          alt="logo " style={styles}
+          alt="Netflix" style={styles}
         />
         <div className="topHead-2">
           <select className="select">
