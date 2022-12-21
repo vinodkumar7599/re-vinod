@@ -84,10 +84,12 @@ export default function LoginHome() {
       <div>
         <Switch>
           <Route exact path="/login">
+          <Nav />
           <Body movies={moviesList} setMovies={setMoviesList} />
             {/* <Login /> */}
           </Route>
           <Route path="/registration">
+          <Nav />
           <Body movies={moviesList} setMovies={setMoviesList} />
             {/* <Registration /> */}
           </Route>
