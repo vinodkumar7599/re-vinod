@@ -1,7 +1,7 @@
 // import React from "react";
 
 import "./nav.css";
-import { Link, Switch, Route, useParams } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 // import { AddMovies, Body } from '../body/bodys';
 // import {useState} from "react";
 // import { AboutUs } from './AboutUs';
@@ -15,31 +15,34 @@ export function Nav() {
       <div>
         {/* <CssBaseline /> */}
         <ul className="nav-ul">
-          <li>
-            <img
-              className="logoNav nav-li"
-              src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
-              width="130"
-              height="50"
-              alt="logo"
-            />
-          </li>
-
-          <li className="nav-li">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav-li">
-            <Link to="/AboutUs">About Us</Link>
-          </li>
-          <li className="nav-li">
-            <Link to="/Movies">Movies</Link>
-          </li>
-          <li className="nav-li">
-            <Link to="/AddMovies">Add Movies</Link>
-          </li>
-          <li className="nav-li">
-            <Link to="/Channels">Channels</Link>
-          </li>
+          <div>
+            <li>
+              <img
+                className="logoNav nav-li"
+                src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+                width="130"
+                height="50"
+                alt="logo"
+              />
+            </li>
+          </div>
+          <div className="sidenav">
+            <li className="nav-li">
+              <NavLink className="removeunderline" to="/">Home</NavLink>
+            </li>
+            <li className="nav-li">
+              <NavLink className="removeunderline" to="/AboutUs">About Us</NavLink>
+            </li>
+            <li className="nav-li">
+              <NavLink className="removeunderline" to="/Movies">Movies</NavLink>
+            </li>
+            <li className="nav-li">
+              <NavLink className="removeunderline" to="/AddMovies">Add Movies</NavLink>
+            </li>
+            <li className="nav-li">
+              <NavLink className="removeunderline" to="/Channels">Channels</NavLink>
+            </li>
+          </div>
         </ul>
       </div>
       {/* <div>
@@ -55,6 +58,9 @@ export function Channels() {
 }
 export function NotFound() {
   return (
-    <img src="https://cdn.mos.cms.futurecdn.net/PuXipAW3AXUzUJ4uYyxPKC-1200-80.jpg" width="100%" height="620px" ></img>
+    <img
+      src="https://cdn.mos.cms.futurecdn.net/PuXipAW3AXUzUJ4uYyxPKC-1200-80.jpg"
+      width="100%"
+      height="620px"></img>
   );
 }
